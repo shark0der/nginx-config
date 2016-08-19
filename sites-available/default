@@ -1,0 +1,9 @@
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  server_name _;
+  include includes/security.conf;
+  include includes/le.conf;
+  return 301 https://www.google.com;
+}
+
