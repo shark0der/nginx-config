@@ -1,0 +1,4 @@
+#!/bin/sh -e
+/opt/certbot/certbot-auto renew
+nginx -s reload
+
